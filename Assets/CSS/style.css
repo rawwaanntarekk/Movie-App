@@ -1,0 +1,212 @@
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+    color: #EF320C;
+    cursor: pointer;
+}
+
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 9999;
+
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+nav {
+    width: 60px;
+}
+
+.icons, .side-inner, nav ul li {
+    transition-duration: 1s;
+
+}
+
+.icons {
+    transition: 0.5 background-color;
+}
+
+.move {
+    transform: translateX(210px);
+
+}
+
+.side-inner {
+    position: absolute;
+    width: 0 !important;
+
+
+}
+
+.width {
+    width: 210px !important;
+}
+
+
+
+nav svg {
+    width: 40px;
+    margin: auto;
+
+}
+
+nav .social svg {
+    width: 25px;
+    margin: auto;
+
+}
+
+ul {
+    position: absolute;
+    top: 250%;
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .icons {
+        background-color: transparent !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    svg {
+        position: absolute;
+        color: white;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .logo, .social {
+        display: none;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+.slide {
+    top: 0%;
+    transition-duration: 2s;
+
+}
+
+
+
+#search {
+    outline: none;
+}
+
+
+#contact input {
+    outline: none;
+    border-width: 0 0 2px 0;
+    border-color: white;
+    background-color: transparent;
+    padding: .9375rem;
+    color: white;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+#contact button {
+    width: 6.25rem;
+}
+
+
+
+.poster {
+    transition: transform 0.3s ease;
+}
+
+
+.poster:hover {
+    transform: rotate(2deg) scale(1.25);
+    filter: blur(2px);
+
+}
+
+.poster:hover .layer {
+    display: block !important;
+}
+
+
+
+.wrong {
+    border-color: red !important;
+
+}
+
+
+
+label {
+    width: 100%;
+    left: 0;
+    top: 101%;
+    font-size: .8125rem;
+    color: red;
+    transition-duration: 2s;
+}
+
+.send {
+    transition: 0.2s all !important;
+
+}
+
+
+
+.btnEscape {
+    transform: translateX(100%) !important;
+    background-color: red !important;
+}
+
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    /* position: absolute; */
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+.layer h3 {
+    color: white;
+    text-align: center;
+}

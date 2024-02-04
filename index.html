@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie App</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="/Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
+
+</head>
+
+<body class="bg-black overflow-hidden">
+
+    <div class="loading ">
+        <div class="d-flex justify-content-center align-items-center  h-100">
+            <span class="loader"></span>
+        </div>
+    </div>
+
+
+    <!-- Navigation Bar  -->
+
+    <nav class="position-fixed">
+
+
+        <div class="icons p d-flex flex-column justify-content-between bg-light   min-vh-100 px-1">
+
+            <div class="w-75 mx-auto mt-2 logo">
+                <img src="Assets/Images/logo.png" alt="" class="w-100">
+            </div>
+            <div class="mx-auto bars">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" role="button" class="w-2 h-2 d-block setting">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </div>
+
+            <div class="social mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 d-block">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 d-block mt-1 mb-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                </svg>
+
+            </div>
+
+
+        </div>
+
+        <div class="side-inner  top-0  text-light min-vh-100  bg-black">
+            <ul class="list">
+                <li class=my-4>Now playing</li>
+                <li class=my-4>Popular</li>
+                <li class=my-4>Top Rated</li>
+                <li class=my-4>Trending</li>
+                <li class=my-4>Upcoming</li>
+                <li class=my-4>Contact Us</li>
+            </ul>
+
+
+        </div>
+
+
+
+
+    </nav>
+
+
+
+
+    <!-- Search -->
+
+    <div class="container">
+        <div class="row">
+            <div class="searchBlock col-sm-10 col-md-6 mx-auto">
+                <input type="text" id="search"
+                    class="rounded rounded-5 bg-transparent w-100  px-3 mt-5 py-2 border border-2 border-white text-white  "
+                    placeholder="Search">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Movies List -->
+
+    <div class="container mb-5">
+        <div class="row mt-5 gy-5" id="content">
+
+        </div>
+    </div>
+
+
+    <!-- Contact Us  -->
+
+    <section id="contact" class="mt-5 p-5">
+        <div class="container   ">
+            <h2 class="fw-light text-white mx-sm-5 mx-md-0 ">Contact Us</h2>
+
+            <div class="row mx-auto">
+                <div class="col-sm-10 col-md-6 mx-auto"><input id="" type="text" placeholder="Enter Your Name"
+                        class="w-100 text-center bg-transparent "></div>
+                <div class="col-sm-10 col-md-6 mx-auto position-relative mb-2">
+                    <input id="mail" type="mail" placeholder="Enter Your Email" class="w-100">
+                    <label for="mail" class=" mail  position-absolute  ms-3 mb-2 d-none  "> Invalid Email , try
+                        example@domain.com</label>
+
+
+                </div>
+                <div class="col-sm-10 col-md-6 mx-auto position-relative">
+                    <input id="phone" type="phone" placeholder="Enter Your Phone" class="w-100">
+                    <label for="phone" class=" phone  position-absolute  ms-3 mb-2 d-none "> Invalid Phone
+                        number</label>
+
+                </div>
+                <div class="col-sm-10 col-md-6 mx-auto position-relative mb-2 ">
+                    <input id="age" type="text" placeholder="Enter Your Age" class="w-100 ">
+                    <label for="age" class=" age  position-absolute  ms-3 mb-2 d-none  "> your age must be +16</label>
+
+                </div>
+                <div class="col-sm-10 col-md-6 mx-auto mb-2 position-relative">
+                    <input id="pass" type="password" placeholder="Enter Your Password" class="w-100">
+                    <label for="pass" class=" pass  position-absolute  ms-3 mb-2 d-none  "> password must contain
+                        letters and numbers and at least 8 letters</label>
+
+                </div>
+                <div class="col-sm-10 col-md-6 mx-auto position-relative">
+                    <input id="repass" type="password" placeholder="ReEnter Password" class="w-100">
+                    <label for="repass" class=" repass  position-absolute  ms-3 mb-2 d-none  "> password didn't
+                        match</label>
+
+
+
+                </div>
+                <button class=" send btn btn-dark mt-sm-4 ms-sm-5 ms-md-1 text-light">submit</button>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Jquery js  -->
+    <script src="/Assets/JS/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js  -->
+    <script src="/Assets/JS/bootstrap.bundle.min.js"></script>
+    <!-- Main js  -->
+    <script src="/Assets/JS/main.js"></script>
+</body>
+
+</html>
